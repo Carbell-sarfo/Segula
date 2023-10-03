@@ -6,17 +6,37 @@ import '../App.scss'
 
 const Navbar = () => {
   return (
-    <div>
-        <Link to="/">
-            <img src={Logo} alt="logo"/>
-        </Link>
-        <nav>
-            <Link to="/" >Home</Link>
-            <Link to="/about" >About</Link>
-            <Link to="/careers" >Services</Link>
-            <Link to="/our-packages" >Our Packages</Link>
-            <Link to="/services" >Careers</Link>
-        </nav>
+    <div className="nav-bar">
+      <div className="container wrapper">
+
+        <div className="nav-container">
+          {/* logo */}
+          <Link to="/" className="logo">
+              <img src={Logo} alt="logo"/>
+          </Link>
+
+
+          {/* nav-Menu put in a list */}
+          <ul className="nav-list">
+            <li className="nav-item">
+              <Link to="/" className="nav-link" >Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link" >About</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/careers" className="nav-link">Services</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/our-packages" className="nav-link" >Our Packages</Link>
+            </li>
+            <li className="nav-item">
+
+              <Link to="/services" className="nav-link" >Careers</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }

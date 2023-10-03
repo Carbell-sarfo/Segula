@@ -66,11 +66,13 @@
 
     // =========  LOGO   =============
     .logo {
-        margin-bottom: 0;
+        // margin-bottom: 0;
+        // display: inline-block
 
         img {
             width: 150px;
             height: auto;
+            // line-height: 1;
         }
     }
 
