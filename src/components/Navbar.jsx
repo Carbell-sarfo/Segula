@@ -1,19 +1,30 @@
 import {Link} from "react-router-dom"
 import Logo from "../assets/logo.png"
 
+
 const Navbar = () => {
   return (
-    <div style={{backgroundColor: "black", color: "white", display: "flex", justifyContent: "space-between", alignItems: "center", padding: "10px 20px"}}>
-        <Link to="/">
-            <img src={Logo} alt="logo" style={{width: "120px", height: "70px"}} />
+    <div>
+        <Link to="/" className="logo">
+            <img src={Logo} alt="logo"  />
         </Link>
-        <nav style={{display: "flex", gap: "1rem"}}>
-            <Link to="/" style={{textDecoration: "none", color: "white"}}>Home</Link>
-            <Link to="/about" style={{textDecoration: "none", color: "white"}}>About</Link>
-            <Link to="/careers" style={{textDecoration: "none", color: "white"}}>Services</Link>
-            <Link to="/our-packages" style={{textDecoration: "none", color: "white"}}>Our Packages</Link>
-            <Link to="/services" style={{textDecoration: "none", color: "white"}}>Careers</Link>
-        </nav>
+        <ul className="nav-list">
+          <li className="nav-item">
+            <Link to="/" className="nav-link">Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-link">About</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/careers" className="nav-link">Services</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/our-packages" className="nav-link">Our Packages</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/services" className="nav-link">Careers</Link>
+          </li>
+        </ul>
     </div>
   )
 }
