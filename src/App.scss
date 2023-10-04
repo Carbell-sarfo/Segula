@@ -1,0 +1,33 @@
+
+// Sass Compilation for the website starts here
+
+// Abstract
+@import "./sass/abstract/js-classes";
+@import "./sass/abstract/mixins";
+@import "./sass/abstract/animations";
+
+
+// Base
+@import "./sass/base/reset";
+@import "./sass/base/typography";
+
+// Components
+@import "./sass/components/components";
+
+// Layouts
+@import "./sass/layouts/container";
+@import "./sass/layouts/navigation";
+@import "./sass/layouts/footer";
+@import "./sass/layouts/forms";
+@import "./sass/layouts/slick";
+
+
+
+// Pages
+@import "./sass/pages/index";
+@import "./sass/pages/privacy";
+@import "./sass/pages/form-success";
+@import "./sass/pages/portfolio";
+
+
+@import "./sass/abstract/js-classes";
