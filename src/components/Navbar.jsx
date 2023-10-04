@@ -8,13 +8,18 @@ const Navbar = () => {
   return (
     <div className="nav-bar">
       <div className="container wrapper">
-
         <div className="nav-container">
+          {/* nav-button */}
+        <div className="nav-btn">
+          <div className="lines"></div>
+          <div className="lines"></div>
+          <div className="lines"></div>
+        </div>
+
           {/* logo */}
           <Link to="/" className="logo">
               <img src={Logo} alt="logo"/>
           </Link>
-
 
           {/* nav-Menu put in a list */}
           <ul className="nav-list">
