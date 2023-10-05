@@ -69,7 +69,7 @@ const LetTalk = () => {
                     <label for="message">Add a message</label>
                     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                 </div>   
-                <input type="submit" value="Send" class="btn btn-blue" />       
+                <input type="submit" value="Send" class="btn btn-primary" />       
             </form>
          </div>
     </div>

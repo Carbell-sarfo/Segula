@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from "react-router-dom"
+import Logo from "../assets/logo.png"
 
 const Footer = () => {
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
 
         <div class="footer-container">
             <div class="text-center">
-                <img src="/assets/logo-joint.png" alt="Segula Global logo" class="footer-logo" />
+                <img src={Logo} alt="logo" className='footer-logo'/>
             </div>
 
         {/* Social media icons */}
