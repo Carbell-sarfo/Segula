@@ -6,6 +6,8 @@ import '../App.scss'
 
 const Navbar = () => {
   return (
+    // navigation overlay
+
     <div className="nav-bar">
       <div className="container wrapper">
         <div className="nav-container">

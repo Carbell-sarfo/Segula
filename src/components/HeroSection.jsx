@@ -2,12 +2,16 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div>
-        <div>
-            <h2>Elevate your presence, expand your reach, and create a meaniful influence</h2>
-            <button>Send a message</button>
-            <button>Free Custom Proposal</button>
+    <div class="section-hero" id='hero'>
+      <div className="container wrapper">
+        <div className="hero-container">
+        <div className='hero-text'>
+            <h1 className='hero-name'>Elevate your presence, expand your reach, and create a meaniful influence</h1>
+            <button className='btn btn-primary mr-20'>Send a message</button>
+            <button className='btn btn-neutral'>Free Custom Proposal</button>
         </div>
+        </div>
+      </div>
         <div></div>
     </div>
   )
