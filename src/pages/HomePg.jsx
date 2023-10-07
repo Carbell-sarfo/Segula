@@ -6,6 +6,7 @@ import LetTalk from '../components/LetTalk'
 import Navbar from '../components/Navbar'
 import OurPackages from '../components/OurPackages'
 import OurServices from '../components/OurServices'
+import SliderSlick from '../components/SliderSlick'
 import WhatWeDo from '../components/WhatWeDo'
 import WhoWeAre from '../components/WhoWeAre'
 

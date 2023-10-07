@@ -1,8 +1,11 @@
 import React from 'react'
+import SliderSlick from './SliderSlick'
 
 const ClientSuccess = () => {
   return (
-    <div>ClientSuccess</div>
+    <div>
+      <SliderSlick />
+    </div>
   )
 }
 
