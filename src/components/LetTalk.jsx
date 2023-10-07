@@ -42,7 +42,7 @@ const LetTalk = () => {
             </div>
 
             <form class="contact-form" name="Contact-Form" method="POST" data-netlify="true" action="/form-success/">
-                <h2 class="heading-secondary">Send a message</h2>
+                <h2 class="heading-tertiary mb-20">Send a message</h2>
                 <div class="input-field">
                     <label for="fname">Full Name</label>
                     <input type="text" name="fname" id="fname" required />

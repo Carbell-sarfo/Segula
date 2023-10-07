@@ -4,7 +4,9 @@ const WhoWeAre = () => {
   return (
     <div className="section-about" id="about">
       <div className="container wrapper">
-        <h1>Who We Are</h1>
+        <div className="text-center mb-50">
+          <h1 className="heading-secondary">Who We Are</h1>
+        </div>
         <div className="col-1-2">
           {/* about text */}
           <div>
