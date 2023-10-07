@@ -5,7 +5,9 @@ const WhatWeDo = () => {
   return (
     <div className='section-proposition'>
       <div className="container wrapper">
-        <h2>What We Do</h2>
+        <div className="text-center mb-50">
+          <h2 className='heading-secondary'>What We Do</h2>
+        </div>
         <div className='col-1-2'>
             <div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore excepturi commodi beatae tenetur explicabo, vitae ab? Dolorem magnam cum voluptatibus dolores perspiciatis magni consectetur dolor ipsam, aspernatur maiores laborum?</p>
