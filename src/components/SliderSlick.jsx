@@ -16,52 +16,22 @@ const SliderSlick = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     arrows: true,
-    prevArrow: <BsArrowLeft color="red" size={50} style={{position: "absolute", right: "50px", top: "0"}}/>,
-    nextArrow: <BsArrowRight color="black" size={50} style={{position: "absolute", left: "15px", top: "0"}}/>
-    // .slick-next {
-    //         right: 15px;
-    //         top: 100%;
-    //         transform: translateY(5px);
-    //     }
-    //     .slick-prev {
-    //         left: 15px;
-    //         top: 100%;
-    //         transform: translateY(5px);
-    //     }
-    //   '<button type="button" class="slick-prev"><i class="fa-solid fa-chevron-left"></i></button>',
-    // nextArrow:
-    //   '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></i></button>'
+    prevArrow: <BsArrowLeft  className="slick-arrow prev-arrow" color="green" size={50} 
+    // style={{position: "absolute", right: "50px", top: "0"}}
+    />,
+    nextArrow: <BsArrowRight className="slick-arrow next-arrow" color="red"  size={50} 
+    // style={{position: "absolute", left: "15px", top: "0"}}
+    />
+    
   };
   return (
-    <div>
-      <div>
-        <h2> Single Item</h2>
-        <div>
+    <div className="testimonial-container">
           <Slider {...settings}>
-            <div>
-              <ClientCard cardImg={Boy1} />
-            </div>
-            <div>
-              <h3>2</h3>
-              <ClientCard cardImg={Boy2} />
-            </div>
-            <div>
-              <h3>3</h3>
-              <ClientCard cardImg={Boy3} />
-            </div>
-            <div>
-              <h3>4</h3>
-              <ClientCard cardImg={Boy4} />
-            </div>
-            {/* <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div> */}
+            <ClientCard cardImg={Boy1} />
+            <ClientCard cardImg={Boy2} />
+            <ClientCard cardImg={Boy3} />
+            <ClientCard cardImg={Boy4} />
           </Slider>
-        </div>
-      </div>
     </div>
   );
 };
