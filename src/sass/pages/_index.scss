@@ -371,50 +371,27 @@
 // ================= SECTION TESTIMONIAL ===================
 .section-testimonials {
     padding: 15rem 0;
-    background: var(--clr-gray-light);
+    background-image: linear-gradient(to bottom, rgba(0, 162, 255, 0.89), rgba(1, 25, 57, 0.896)), url(/assets/testimonial-background.png);
+    background-size: cover;
+    background-position: cover;
+    background-attachment: fixed;
 
-    .testimonials-container {
-        // position: relative;
-        // // padding: 0rem 50px 5rem;
-        // margin-left: auto;
-        // margin-right: auto;
-        // margin-top: 50px;
-        // width: 100%;
-        // max-width: 800px;
-        // background-color: red;
-
-        .slick-arrow {
-            // position: absolute;
-            // bottom: 0;
-            // width: 5rem;
-            // height: 5rem;
-            // border-radius: 50%;
-            // z-index: 1;
-            // background-color: #becefb;
-            // transition: .3s;
-
-            // &:hover, &:focus {
-            //     background-color: var(--clr-green);
-            // }
-
-            // i {
-            //     color: var(--clr-white);
-            //     font-size: 2rem;
-            // }
-        }
-        .slick-next {
-            // right: 15px;
-            // top: 100%;
-            // transform: translateY(5px);
-        }
-        .slick-prev {
-            // left: 15px;
-            // top: 100%;
-            // transform: translateY(5px);
-        }
+    &:hover > .container .slick-slider .arrow{
+        color: var(--clr-gray-light);
+        background-color: var(--clr-primary);
     }
 
-    
+
+    .slick-slider {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-top: 5rem;
+        padding-inline: 5rem;
+        position: relative;
+        // overflow: visible;
+    }
+
       .testimonial {
         background: var(--clr-white);
         width: 100%;
@@ -427,27 +404,28 @@
         border-bottom: 2px solid var(--clr-primary);
 
         &:hover {
-            // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.129);
-            // transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.129);
+            transform: translateY(-3px);
         }
 
 
         &__text {
-            // font-size: 1.5rem;
-            // display: none;
+            font-size: 1.5rem;
+            display: none;
         }
 
         &__img {
             width: auto;
             height: 100px;
             margin: 0rem auto;
-            border: 1px solid var(--clr-primary);
+            border: 2px solid var(--clr-gold-light);
             border-radius: 50%;
+            // margin-top: -5rem;
         }
 
         &__name {
-            text-align: center;
-            margin-bottom: 3rem;
+            // text-align: center;
+            // margin-bottom: 3rem;
         }
 
         

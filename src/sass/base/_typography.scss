@@ -59,6 +59,10 @@
 }
 .white-text {
     color: #fff;
+
+    &::before, &::after {
+        background-color: var(--clr-gold-light);
+    }
 }
 .primary-text {
     color: var(--clr-primary);
