@@ -10,29 +10,27 @@ const SliderSlick = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    autoplaySpeed: 4000,
     arrows: true,
-    prevArrow: <BsArrowLeft  className="slick-arrow prev-arrow" color="green" size={50} 
-    // style={{position: "absolute", right: "50px", top: "0"}}
-    />,
-    nextArrow: <BsArrowRight className="slick-arrow next-arrow" color="red"  size={50} 
-    // style={{position: "absolute", left: "15px", top: "0"}}
-    />
+    // prevArrow: <BsArrowLeft  className="slick-arrow prev-arrow"  />,
+    // nextArrow: <BsArrowRight className="slick-arrow next-arrow"  />,
+
+    prevArrow: <button type="button" class="arrow prev"><i class="fa-solid fa-chevron-left"></i></button>,
+    nextArrow: <button type="button" class="arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+       
     
   };
   return (
-    <div className="testimonial-container">
-          <Slider {...settings}>
-            <ClientCard cardImg={Boy1} />
-            <ClientCard cardImg={Boy2} />
-            <ClientCard cardImg={Boy3} />
-            <ClientCard cardImg={Boy4} />
-          </Slider>
-    </div>
+        <Slider {...settings}>
+          <ClientCard className="testimonials-container" cardImg={Boy1} />
+          <ClientCard className="testimonials-container" cardImg={Boy2} />
+          <ClientCard className="testimonials-container" cardImg={Boy3} />
+          <ClientCard className="testimonials-container" cardImg={Boy4} />
+        </Slider>
   );
 };
 

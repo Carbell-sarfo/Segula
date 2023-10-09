@@ -1,4 +1,4 @@
-import "./ClientCard.css"
+// import "./ClientCard.css"
 import BoyImg from "../assets/boy.png"
 
 const ClientCard = ({cardImg}) => {
