@@ -6,14 +6,16 @@ import Richmond from './Richmond'
 
 const TeamIndex = () => {
   return (
-    <div>
-        <div>
-            <h1>Our Team</h1>
+    <div className='section-team'>
+      <div className="container wrapper">
+        <div className='text-center mb-50'>
+            <h1 className='heading-secondary'>Our Team</h1>
         </div>
         <Shelia />
         <Carbell />
         <Winnard />
         <Richmond />
+      </div>
     </div>
   )
 }
