@@ -69,7 +69,7 @@
 
 // ============= Section Footer =============
 .section-footer {
-    background: var(--clr-black);
+    background-image: linear-gradient(to right bottom, #0c2921, #021510);
     color: var(--clr-gray-light);
     padding: 8rem 0 5rem;
     width: 100%;
@@ -109,7 +109,6 @@
             border-radius: 1rem;
             font-size: 2rem;
             color: var(--clr-white);
-            // background: linear-gradient(to right bottom, #E7C383, #94774F);
             transition: .4s;
             position: relative;
             overflow: hidden;

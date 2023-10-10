@@ -6,7 +6,7 @@ import OurPackagesPg from "./pages/OurPackagesPg";
 import ServicesPg from "./pages/ServicesPg";
 import {ToastContainer} from "react-toastify"
 import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+// import "slick-carousel/slick/slick-theme.css"
 
 
 function App() {

@@ -10,7 +10,9 @@ const Footer = () => {
 
         <div class="footer-container">
             <div class="text-center">
-                <img src={Logo} alt="logo" className='footer-logo'/>
+                <a href="/">
+                    <img src={Logo} alt="logo" className='footer-logo'/>
+                </a>
             </div>
 
         {/* Social media icons */}
