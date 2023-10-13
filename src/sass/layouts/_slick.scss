@@ -26,7 +26,7 @@ ul.slick-dots {
             @include ease(.4s);
             width: 8px;
             height: 8px;
-            background: darkgray;
+            background: var(--clr-white);
             position: absolute;
             @include shadow;
             border-radius: 50%;
@@ -49,11 +49,9 @@ ul.slick-dots {
 
   
 // Slick Prev & Slick Next
-.arrow {
-  // background-color: var(--clr-primary);
+.slick-arrow {
   position: absolute;
   top: 50%;
-  // transform: translateY(-50%);
   display: none;
   display: flex;
   align-items: center;
@@ -71,8 +69,8 @@ ul.slick-dots {
   z-index: 1;
 
     &:hover, &:focus {
-      color: var(--clr-gray-light);
-      background-color: var(--clr-primary);
+      color: var(--clr-primary);
+      background-color: var(--clr-gold-light);
     }
 
   &::before {
@@ -84,10 +82,10 @@ ul.slick-dots {
   }
 }
 
-.prev {
+.slick-prev {
   left: 0;
 }
-.next {
+.slick-next {
   right: 0;
 }
 
@@ -95,7 +93,7 @@ ul.slick-dots {
 
 // smaller screen
 @media screen and (max-width: 768px) {
-  .arrow {
+  .slick-arrow {
     top: calc(100% + 30px);
   }
 
@@ -105,10 +103,10 @@ ul.slick-dots {
 }
 @media screen and (min-width: 769px) {
   
-  .next {
+  .slick-next {
     transform: translateX(30px);
   }
-  .prev {
+  .slick-prev {
     transform: translateX(-30px);
   }
 }

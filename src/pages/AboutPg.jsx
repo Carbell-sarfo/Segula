@@ -8,7 +8,9 @@ const AboutPg = () => {
   return (
     <div>
         <Navbar />
-        <h1>This is the About Page</h1>
+        <section className="hero">
+          <h1>Who We are</h1>
+        </section>
         <WhoWeAre />
         <TeamIndex />
         <LetTalk />
