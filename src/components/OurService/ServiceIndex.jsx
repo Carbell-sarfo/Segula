@@ -6,11 +6,16 @@ import PhotoVideo from './PhotoVideo'
 
 const ServiceIndex = () => {
   return (
-    <div>
+    <div className='section-services'>
+      <div className="container wrapper">
+      <div className='text-center mb-50'>
+            <h1 className='heading-secondary'>Our Services</h1>
+        </div>
         <LinkedInOpt />
         <PerBranding />
         <WebDesign />
         <PhotoVideo />
+      </div>
     </div>
   )
 }
