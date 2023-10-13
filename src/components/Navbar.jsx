@@ -43,7 +43,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
 
-              <Link to="/careers" className="nav-link" >Careers</Link>
+              <Link to="/careers" className="nav-link btn btn-neutral" >Schedule a meeting</Link>
             </li>
           </ul>
           <div onClick={() => setMobile(!mobile)} className="nav-btn-div">

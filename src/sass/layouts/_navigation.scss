@@ -65,6 +65,7 @@
             }
         }
     }
+    
 
     // =========  LOGO   =============
     .logo {
@@ -96,7 +97,6 @@
                 padding: 1rem 0;
                 font-family: inherit;
                 @include ease(.4s);
-                // border-bottom: 2px solid red;
                 position: relative;
                 z-index: 1;
 
@@ -127,12 +127,21 @@
                     border-bottom: 2px solid var(--clr-cream);
                 }
             }
+
+            .btn {
+                padding-inline: 2rem;
+            }
+            .btn-neutral {
+                color: var(--clr-primary);
+            }
         }
         
     }
 
 
 }
+
+
 
 
 
@@ -245,7 +254,7 @@
             display: flex;
             position: absolute;
             top: 50%;
-            right: 10rem;
+            right: 0rem;
             transform: translate(00px, -50%);
 
             .nav-item {
@@ -262,11 +271,17 @@
                         color: var(--clr-primary);
                     }
                 }
+                .btn-neutral {
+                    color: var(--clr-primary);
+                }
             }
 
         }
     
         .nav-btn {
+            display: none;
+        }
+        .nav-btn-div {
             display: none;
         }
 
