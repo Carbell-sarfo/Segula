@@ -13,7 +13,7 @@ const SliderSlick = () => {
     speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 4000,
     arrows: true,
     // prevArrow: <BsArrowLeft  className="slick-arrow prev-arrow"  />,
